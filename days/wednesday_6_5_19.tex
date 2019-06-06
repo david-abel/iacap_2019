@@ -242,13 +242,204 @@ Under the self-referential view, we can recreate the paradox. The topological an
 
 Multi-agent example: Two numbers, one on each of two agents' foreheads. The numbers are off by one. \\
 
-$\ra$ Ask each agent: do you know the number on your head? First time: no! Ask again: no! ask again: yes!
-
-
+$\ra$ Ask each agent: do you know the number on your head? First time: no! Ask again: no! ask again: yes! Can use Cantor's derivative method to repeatedly eliminate possible worlds until $x$ is known (the true state of the world).
 \spacerule
+
+
+
+
+
 \subsection{David Fernandez-Duque on Stratified Evidence Logic}
 
+Example: Alice wants to know if the movie ``Roma" by Alfonso Cuaron is a good movie. She asks her chatbot, Bot. Bot decides that wikipedia and rotten tomatoes are not sufficient for answering Alice's question. \\
+
+Bot does conclude that an oscar nomination and a rotten tomatoes score of 90\% or higher are sufficient to answer Alice's question. \\
+
+$\ra$ Both can only answer her question with $N = 2$ pieces of evidence. But what if $N$ is really large? $N > 10,000$? \\
+
+{\bf Goal:} Present a logical framework in which the amount of evidence needed to conclude a new belief can be explicitly counted in order to model {\it bounded rationality}. \\
+
+\ddef{Evidence Models}{An evidence model consists of:
+\begin{enumerate}
+    \item Possible worlds where atomic facts may attain different truth values.
+    \item Evidence sets: sets of worlds that remain possible after making an individual observation.
+\end{enumerate}}
+
+Some evidence-based situations:
+\begin{itemize}
+    \item $Ap$: $p$ is true everywhere
+    \item $Ep$: Some piece of evidence supports that $p$.
+    \item $\square_0 p$: Some factual piece of evidence supports that $p$.
+    \item $\square p$: There is some finite collection of factual evidence supporting $p$.
+    \item $[\alpha]p$: there is a collection of size less than $\alpha + 1$ that supports $p$.
+    
+    $\ra$ This is the main contribution of the work: a new theory for clarifying the size of evidence and its role.
+\end{itemize}
+
+\newpage
+\ddef{Stratified Evidence Model}{A stratified evidence model is a triple, $M = (W, (E_\alpha)_{\alpha \in \mathbb{N}}, V)$, where the evidence all has to be arranged as less than a particular size/effort (as denoted by $\alpha$).}
+
+Stratified Evidence logic:
+\begin{enumerate}
+    \item Syntax: $\perp, p, \phi \ra \psi, [\alpha]_\phi$, where $\alpha$ is a cardinal/natural number, $p$ is an atomic proposition.
+    \item New piece: what happens to stratified evidence? $(M, w) \implies [\alpha]_\phi$ if there is $X$ that support $\phi$ subject to the $\alpha$ constraint.
+\end{enumerate}
+
+Back to the Roma Example: Bot needed to check Rotten Tomatoes and Wikipedia to verify that Roma is a great movie. This can be represented in a strict stratified evidence model. \\
+
+Example 2: Let's consider graph problems, like determining whether a graph contains a hamiltonian cycle. \\
+
+Q: How might we express this problem in stratified epistemic logic? \\
+
+A: Well, we pose statements like $M \implies h \ra [1]h$, if one piece of evidence can let us answer the decision problem. More generally, we'd see $M \implies \neg h \ra [\omega]\neg h$, where $\omega$ is the first infinite cardinal. \\
+
+Example 3: The halting problem. $H_n$ is the set of machines that halt in at most $n$ steps, $W$ is the set of all turing machines. Then we can express this: $M \implies h \ra [\omega]h$. To determine if they don't halt, though, we of course need to write $M \implies \neg p \ra [\omega_1]\neg p$, where $\omega_1$ is the first uncountable ordinal (since we would have to run the machine forever).\\
+
+Main result:
+\begin{theorem}
+The following are equivalent:
+\begin{enumerate}
+    \item $\phi$ is satisfiable over a stratified evidence model
+    \item $\phi$ is satisfiable over a strict stratified evidence model
+    \item $\phi$ is satisfiable over a finite stratified evidence model.
+\end{enumerate}
+\end{theorem}
+
+Expressing standard evidence notions:
+\begin{enumerate}
+    \item $A\phi \equiv [0]_\phi$: $\phi$ is true everywhere
+    \item $E \phi \equiv \langle 0\rangle [1]_\phi$: There is evidence supporting $\phi$.
+    \item $\square_0 \phi \equiv [1]_\phi$: There is factual evidence supporting $\phi$.
+\end{enumerate}
+
+Concluding Remarks:
+\begin{itemize}
+    \item Stratified evidence logics allow us to explicitly quantify the amount/cost of evidence required to justify a given fact.
+    \item This logic retains the nice computational behavior of standard evidence logics.
+    
+    Q: What is precise computational complexity of stratified evidence logic and its fragments?
+    
+    \item Many familiar evidence-based notions naturally fall into our framework.
+    
+    \item Evidence may also be stratified by trust rather than effort, leading to very different logics.
+\end{itemize}
+
+\spacerule
+
+\subsection{Armando Castaneda on Distributed
+Computing with Bounded Rational Agents}
+
+{\bf Goal:} Think about distributed systems from an agent-centric view. \\
+
+Two components of a distributed system:
+\begin{enumerate}
+    \item Agents: computers, robots, people, ants.
+    \item Communication medium: messages, signals, public/private announcements.
+\end{enumerate}
+
+$\ra$ We have loads of models, all of which make different assumptions; timing assumptions (synchronous/asynchronous), local failure assumptions, static/dynamic, and so on. \\
+
+Q: What about {\it local} computations?\\
+
+A: Two views: 
+\begin{enumerate}
+    \item Computability approach: each agent is ``more" than a Turing machine
+    
+    $\ra$ can be useful to clarify impossibility results. But, suffers because some solvable tasks are not implementable in reality, period.
+    
+    
+    \item Algorithmic approach: TM with unbounded time/space, often a loose definition.
+    
+    $\ra$ People do not like locally expensive solutions (usually assume agents can solve NP-Complete problems locally).
+\end{enumerate}
+
+\dbox{{\bf New Proposal:} Incorporate realistic models of local computations in the study of distributed systems.}
+
+$\ra$ Bound resources like time, space, and bandwidth. \\
+
+Compact Local Streaming (CLS) Model: Agent is a turing machine with {\it compact space}, where space $\approx \log k$, where $k$ is the number of agents in the system. \\
+
+Communication: synchronous failure free (SFF):
+\begin{enumerate}
+    \item Communication graph with arbitrary topology.
+    \item Message-passing to neighbors
+    \item Synchronous communication
+    \item Nobody knows the whole graph
+    \item Failure free
+    \item Execution/communication proceeds in discrete rounds.
+\end{enumerate}
+
+Target: simple and general framework for studying these notions. \\
 
 
 
+Local Streaming Algorithms: each round, agents 1) send message to neighbors, 2) receive messages from neighbors, 3) perform local computations. \\
+
+$\ra$ Because of the space limitation imposed on agents, must treat step (2) like a streaming algorithm. \\
+
+Two parts to each algorithm: 1) local streaming algorithm for reacting to messages, and 2) compact communication protocol. \\
+
+{\bf Positive Results:} Lots of possible results on solving various problems using this model: DFS, BFS, leader election, $\Delta+1$ graph coloring, $k$-th largest element, compact routing, and so on. \\
+
+{\bf Negative Results:} Recall that the size of local state is bounded, size of message is bounded, and the memory of the whole system is bounded. So, there are loads of problems that can't be solved. CLS has essentially the power of a TM with poly space. So, problems that require exponential space cannot be solved in CLS. \\
+
+Future Directions:
+\begin{enumerate}
+    \item Continued analysis of CLS, complexity separations, epistemic logics, and so on.
+    \item Resource-bounded agents in other classic models.
+    \item Impact of CLS to classical results.
+\end{enumerate}
+
+\spacerule
+\subsection{Fernando Velazquez-Quesada on Reliability-Based Preference Dynamics}
+
+{\bf Main Question:} How do other people influence us? More precisely, how do the preferences and beliefs of other people influence our individual preferences and beliefs? \\
+
+Proposals:
+\begin{itemize}
+    \item Reaching a consensus from~\citet{degroot1974reaching}: agents have some probability distribution and a weight for other agents.
+    
+    $\ra$ My revised distribution is some linear combination of everybody's distributions.
+    
+    \item Dynamics of Peer Pressure
+    
+    \item Threshold Models
+\end{itemize}
+
+$\ra$ Lots of perspectives on this phenomena. Generally, we want to understand this process. \\
+
+This proposal: {\it reliability-based} preference change. \\
+
+Q: How do other people's preferences affect ours when you have a priority ordering among them? \\
+
+Setting: Finite set of agents, each with a preference relation over situations and a reliability relation over agents. \\
+
+Goal: provide a function from everybody's preferences and a priority among them to a single preference relation using a {\it lexicographic rule}. \\
+
+
+Approach:
+\begin{enumerate}
+    \item Lexicographic rule
+    \item Model operation for simultaneous preference update
+    \item Modality describing the effect (recursion-axioms based axiom system)
+    \item Some variations of the operation
+    \item Identifying situations where the iteration leads to unanimity/stability.
+\end{enumerate}
+
+
+\ddef{PR Frame}{The $i$-th agent will be associated with a tuple $(W,f_i,r_i)$ where:
+\begin{enumerate}
+    \item $W$ is a finite set of worlds (that agents will have preferences over).
+    \item $f_i$: a preference relation (an ordering on worlds
+    \item $r_i$: A reliability relation (ordering over other agents.
+\end{enumerate}}
+
+Also need a language, semantic interpretation, and axioms for describing the worlds/models (it's roughly first order logic, with the added machinery to express preference/reliability relations). \\
+
+
+Example 1 (Total order case): Give precedence to the most important ordering/agent. Can generate new preferences. \\
+
+Example 2 (partial order case): Solutions already in literature, this formalism can roughly capture these formalisms. \\
+
+$\ra$ Can also handle the preorder case.
 
