@@ -10,7 +10,7 @@ Q: Why should we have self-driving cars? \\
 
 A: Safety! Seems to be a necessary condition, in fact. \\
 
-$\ra$ But, what is traffic safety? One answer: adsence of accidents. Another: absence of severe accidents! \\
+$\ra$ But, what is traffic safety? One answer: absence of accidents. Another: absence of severe accidents! \\
 
 Example: four way stops yield fewer accidents, but more severe accidents; roundabouts yield more, but less severe. \\
 
@@ -33,14 +33,14 @@ Q: But will this actually fix the problem? \\
 Safety beyond self driving cars:
 \begin{enumerate}
     \item infrastructure is crucial! Do we plan for SDC or human driven cars?
-    \item Plans require long time horizon: mixed traffic? only SDCs? Increase/decrezse of road vehicles?
+    \item Plans require long time horizon: mixed traffic? only SDCs? Increase/decrease of road vehicles?
 \end{enumerate}
 
 Other values:
 \begin{itemize}
     \item How do we balance safety against other traffic values? (Like efficiency)
     \item Is there a minimal safety level? Should we get to pick a safety level (within reason)?
-    \item If safey is increased by SDCs, does that effect our evaluation of a requirement for a minimal safety level?
+    \item If safety is increased by SDCs, does that effect our evaluation of a requirement for a minimal safety level?
     \item Might we ban driver's license? Ban less safe cars?
     \item Security: how do we protect against manipulation of sensors (analog hacking)?
     $\ra$ One option is data verification by other sources
@@ -83,7 +83,7 @@ Potential for Political and Social Resistance:
 \begin{itemize}
     \item Labor resistance
     \item Economical models might change, resistance from traditional car manufacturers.
-    \item Fear of new technology (3/4 americans fear using fully autonomous SDCs)
+    \item Fear of new technology (3/4 Americans fear using fully autonomous SDCs)
     \item Argue that we have a right to drive? A natural right?
 \end{itemize}
 
@@ -111,4 +111,399 @@ Main perspective in literature: do we accept the current degree of opacity, or s
 This focus: more philosophical question about opacity. \\
 
 $\ra$ Main idea: new definition of epistemic opacity for AI. \\
+
+\ddef{Epistemic Opacity}{A process is epistemically opaque to P if it is impossible for P, given the nature of P, to know all of the epistemically relevant elements of the process (Humphrey 2004)}
+
+But, has some issues. So, a new extended (and stronger) definition:
+
+\ddef{Emergent Opacity}{A process is emergentally opaque to P iff the opacity emerged as a result of some machine learning process and it is impossible given any nature of P, for P to know all the epistemically relevant elements of the process.}
+
+Intuitive: algorithms that exhibit emergent opacity are those that arise from machine learning. \\
+
+Example: Generative Adversarial Networks (GANs). Can generate images of fake people. \\
+
+Problems!
+\begin{itemize}
+\item Lots of clear ethical implications.
+\item But, philosophical implications as well: deep learning suffers from epistemological holism.
+
+$\ra$ Quine: There cannot be an (epistemic) statement of a theory that is in a vacuum.
+
+$\ra$ (Inspired by Dummett): In the future, there's no way to determine if artifacts are computer generated or not.
+\end{itemize}
+
+Point: We're almost at an age where we can't really trust anything digital (images, videos). \\
+
+It's clear: machines have a profound ability to shape our behaviour. \\
+
+Glitches: often minor faults or weaknesses in a system, but are not so damaging so as to prevent individuals from using the system. In gaming community they're often embraced, studied, and exploited. Can be thought of as an opaque bug. \\
+
+``Whosoever desires constant success must change conduct with the times." \dnote{(Machiavelli, presumably?)} \\
+
+One approach to understanding AI systems: treat it like a typical scientific study. Test hypotheses, reach conclusions. However: problematic because of the time horizon. \dnote{Is it?} \\
+
+Alternative: an algorithmic Laplacian demon. Design algorithms that can shed light on their own internal workings. \\
+
+$\ra$ (Veshala Polensky): Examined this approach (building explanatory systems) based on case studies. Identified a problem: systems designed to be persuasive end up carrying out manipulative/persuasive explanations. Polensky illustrates three cases where these kinds of manipulations take place.
+
+
+\spacerule
+
+\subsection{Ronald Arkin on Misdirection in Robot Teams}
+
+Deception: commonly used by animals (see: mimicry in butterflies, camouflage of lizards). Use of deception by primates indicates a theory of mind~\cite{byrne1990machiavellian}, could be a hallmark of social intelligence. \\
+
+Q: How can we get humans and robots get along? Use/understanding of mimicry, camouflage, and deception might be important. \\
+
+$\ra$ Happens in people! People make use of deception in sports, military, education (encourage a baby to eat vegetables by showing them a Kitkat), medical therapy. \\
+
+Dennett: ``another price you pay for higher-order intentionality is the opportunity for deception". \\
+
+Claim: More intentional and autonomous social robots become possible given deception. Has been used in a robot referee, rock-paper-scissors, tends to increase humans' opinions of the robot (along certain axes). \\
+
+The Phenomena of Deception: Bond and Robinson's definition of deception (``a false communication that tends...") implies five steps. \\
+
+New results: A situation's location in interdependence space can be used to determine if a robot or agent should act deception. \\
+
+$\ra$ Received dramatic reactions from the media, chastising the work (despite the paper containing clear statements of the nature of the work: focused on social robotics and theory of mind). \\
+
+Later did work on squirrel-like robot deception: received much more positive feedback! \\
+
+Next studied {\it deception via dishonesty}. Birds and other animals may feign strength/death in order to convince the predator that they're more intimidating than they are. \\
+
+$\ra$ Peacocks: carry a heavy tail around, but it's useful for attracting other mates. It says ``I'm so fit but you can't do anything." Human analogue: rolex! (vs. fake rolex, vs. everyone wearing a rolex). \\
+
+Study: investigated the risk associated with investing resources in appearing stronger than you are (like a peacock carrying its heavy tail). \\
+
+$\ra$ Finding: some criteria, in some mob sizes, these strategies work quite well.\\
+
+Further studies: deception by omission, deception by commission (actively sending a signal vs. not saying anything). \\
+
+$\ra$ Finding: robots can use a reduction of frustration in pill sorting tasks to keep elders engaged. \\
+
+Ethical Issues:
+\begin{itemize}
+\item Q: Should a robot be allowed to lie? Use deceptive methods?
+A: Exemplar ethical frameworks in considering robotic deception (violates categorical imperative). Might be more utilitarian, ensure stakeholders benefit.
+
+\item Q: Should we be making deceptive robots? How does one ensure it is only used in appropriate context
+\item Q: Is there an inherent right whereby humans should not be lied to?
+\end{itemize}
+
+IEEE established deception guidelines: ``It is necessary to develop recommendations regarding the acceptability of deception...". Put forward guidelines for incorporating deception.
+
+\spacerule
+
+\subsection{Covey Award Talk: John Weckert on Our Technology Fetish}
+
+
+Russell said roughly ``nothing is so silly that philosophers can't talk about it". \\
+
+\subsubsection{Background}
+
+\begin{itemize}
+\item We have to admit: humans aren't physically great at anything relative to the rest of the natural world (swim, fly, run, walk, climb, digging). Even our sensors aren't great.
+
+$\ra$ We're good at thinking.
+
+\item {\bf So:} We need technology to survive!
+$\ra$ We are technological creatures
+\end{itemize}
+
+``[Technology is] the improvement brought about on nature by man for the satisfaction of his necessities...therefore the main aim of technology is to promote good life, well-being, and adapting the medium to the will of the individual" (Ortago y Gassett) \\
+
+So, two points: 1) We need technology to survive, 2) We need it not just for survival, but for leading a good and flourishing life.\footnote{Some might argue technology is more about the latter.} \\
+
+But:
+\begin{itemize}
+	\item Lots of current skepticism of science and experts.
+	``We should be concerned about the growing neglect of science and about the overt attacks on it from different sides" (Coenen 2019).
+
+	\item Examples: anti-vaxers, climate change skeptics. Big concerns! Science is well established.
+
+	\item But, less skepticism of technology. Tends to be an {\it overwhelming} love of technology.
+\end{itemize}
+
+We have a fetish with technology: fetish $\approx$ an excessive and irrational devotion or commitment to a particular thing.
+
+\subsubsection{Do we have a tech fetish?}
+
+Now onto the central question;
+
+\dbox{Central Q: Do we have an excessive and irrational devotion or commitment to technology?}
+
+Our worldview: 1) technological progress is {\it good}, 2) new technology is good even if not real progress. \\
+
+$\ra$ Something like a Kuhnian paradigm: technological progress is accepted without question. \\
+
+{\bf Techno-optimism:} ``life is getting better. Poverty continues nose diving; adult literacy is at an all-time high; people around the world are living longer, living in democracies, and are better educated than at any other time in history..." (Will Reinhart, 2018) \\
+
+{\bf Techno-pessimism:} ``Without a responsible and steady guiding hand, it become useless, and perhaps detrimental. Humanity must recognize the limits of technology and look to more realistic solutions for modern problems" (Sebastian Miller, the dangers of techno optimism ,2017). \\
+
+$\ra$ But, there is still a fetish! ``While many people feel fearful about the increased use of AI, machines, and robots in the workplace the move to a more automated future is {\bf inevitable}. \\
+
+O'Regan consulting: 20\% of top 1000 US businesses plan to roll out AI methods {\it this year}. Highlights the inevitability. \\
+
+Critical: {\it development continues in spite of concerns}. Why? Well: 1) benefits outweigh risks, 2) we have a technological fetish, 3) technological fixes preferred over life style changes***\dnote{Yeah!}. \\
+
+$\ra$ We are on a technological treadmill. We bring in new tech, raises new challenges, we need new tech for the challenges, rinse and repeat. \\
+
+
+
+
+Levels of thought about technology:
+\begin{enumerate}
+\item Philosophical: good life, flourishing, awareness of problems
+\item Development of new technologies; innovation, new products.
+
+(The fetish is primarily at this level: ``develop it! it's good! keep doing it.)
+
+\item Use: regulations, policy.
+\end{enumerate}
+
+
+It seems: excessive and irrational devotion to computer technology. People call out for: 1) faster, more memory, 2) quantum computers, 3) Moore's -- why does it matter if it ends? we have good computers now! 4) Networks, 5) AI. \\
+
+$\ra$ These developments are seen as {\it good in themselves}! \\
+
+Example: state surveillance (see: China). China has made a music video promoting the importance of integrity and trustworthiness ahead of the national rollout of the controversial Social Credit System. This can measure and enhance ``trust' nationwide and to build a culture of sincerity. \\
+
+$\ra$ ``It will forge a public opinion environment where keeping trust is glorious. It will strengthen sincerity in government firms, social systems, and so on ...". \\
+
+Takeaway: perhaps this isn't the ideal world we want to live in.
+
+\subsubsection{Quotes on What Computers Should Do}
+
+Q: What shouldn't computers do? \\
+
+A: In the past, Weizenbaum, Moor, Kuflik, and Lenman have given arguments; the future/present, Bostrom, Hawking, and Musk. \\
+
+Wiezenbaum\footnote{Creator of Eliza}: 
+\begin{enumerate}
+\item ``The asking of the question `what does a judge know that we cannot tell a computer?' is a monstrous obscenity. That it has to be put into print at all, even for the purposes of exposing its morbidity, is a sign of the madness of our times... the point is that computers should not be given such tasks." (1970s). \\
+
+\item ``All projects that propose to substitute a computer system for a human function that involves interpersonal respect, understanding, and love, are obscene. Their very contemplation ought to give rise to feelings of disgust in every civilized person." (1976)
+\end{enumerate}
+
+Q: What is the problem? \\
+
+Weiz A: Lots of things! 1) Suggests humans are machines, 2) suggests machines are better than humans, 3) reduces human contact, 4) reduces scope for care, 5) reduces ability to develop virtues, 6) It's dehumanizing. \\
+
+James Moor: ``when computers improve life, its the moral thing to do to use them...the values on which computer decisions are made must always be a human responsibility." \\
+
+Arthur Kuflik: ``Even when decision making responsibility is given to computers, humans should be kept in the loop."
+
+James Lenman: focuses on finding meaning in life and flourishing -- computers can be used to these ends. \\
+
+
+
+Attitudes toward the future of AI:
+\begin{itemize}
+\item More recently, Nick Bostrom: superintelligence represents an existential risk to humanity.
+
+\item Hawking and Musk: don't let AI take our jobs or kill us.
+\item Floridi: logically possible but implausible.
+\item Boden: Dream on. AGI is a pipe dream.
+\item McKinglay: robots won't kill us in our lifetime.
+\end{itemize}
+
+``If-Then" style argument: if something is possible in the future, we should do something about it now. Nordmann rejects this premise. \\
+
+Q: Should we worry about future problems? \\
+
+A: Perhaps computers will never be intelligent! Floridi says computers can be smart but not necessarily conscious. \\
+
+$\ra$ The case hasn't been made that we shouldn't worry about future problems. Really, it's that we shouldn't ignore them (but need to also focus on pressing current issues). \\
+
+\subsubsection{Returning to the Fetish}
+
+Returning to the fetish: most philosophers work at the level of the philosophical; what is the good life? How does technology/AI contribute to our flourishing? But the fetish is at the second level; develop new technology. \\
+
+Overriding values in the world: productivity and efficiency! Make tech that makes things more productive. \\
+
+The fetish: ``the culture of consumption is one mostly created by the concept of planned obsolescence, whereby the products are intentionally designed to last only for a short period and then you will go buy a new one."\\
+
+In 2016: estimated waste of 50 million tonnes from throwing out old phones/computers. \dnote{:O}. \\
+
+This fetish does matter: what sort of world do we want to live? There's a fundamental disconnect between how philosophers are thinking about the impacts of this tech on the world, but people develop them without thinking deeply about them. \\
+
+Q: Should the precautionary principle be considered? \\
+
+A: In some places, the answer is obviously no (the USA), whereas others, the answer is obviously yes (Europe). \\
+
+Some lingering questions:
+\begin{itemize}
+\item Science and technology are guided to some extend by the world's needs.
+\item Q: Can we do anything?
+$\ra$ Funding determines research priorities.
+$\ra$ industry focuses on certain kinds of projects (usually that benefit the company's bottom line).
+\item Good example: medical technology. Used to be a rule of thumb that 90\% of medical research was focused on diseases that pertain to only 10\% of the world's population (those with money).
+\item Q: Should we do anything? 
+$\ra$ A: Largely a question of values!
+$\ra$ Sir Robert Watson said there must be a transformative change to human civilization if we are to avoid an extinction crisis. By transformative change, we mean a fundamental, system-wide reorganization across technological, economical, and social factors"
+\end{itemize}
+
+Should we do anything?
+\begin{itemize}
+\item Raises questions about death. Epicureans attitude toward death: we don't worry about having not been here 100 years ago, so why do we worry about death?
+
+$\ra$ Common view is that it's bad for the dead person to be dead. That's nonsense1
+
+\item We have an obsession with longevity! As opposed to flourishing. A long bad life is probably worse than short epic one.
+
+\item Raises other questions: How should we get enjoyment in life? Should we control the population? How should we be thinking about our relationship with non human nature?
+\end{itemize}
+
+Conclusions:
+\begin{itemize}
+	\item We absolutely have a technology fetish.
+	\item What kind of world do we want to live in?
+	$\ra$ Transfer autonomy to machines?
+	$\ra$ Live in a surveillance society?
+	\item Are we losing the benefits of being in nature? Are we getting too far from how we evolved?
+	\end{itemize}
+Questions we need to think about! \\
+
+If we're going to come to grips with this obsession, we have to look at some of these big issues to do with how we want the world to look (and not just the technical ones).
+
+
+\spacerule
+
+
+\subsubsection{Erlant Etxeberria on Mathematical Explanations and Counterpossibles}
+
+{\bf Focus:} mathematical explanations in physical sciences. \\
+
+Example: Cicada bugs! Some of them come out every year, some come out every $n$ years, where $n$ varies from region to region. Their life cycle (when they ``emerge") follows an unusual period: how do we explain this phenomena? \\
+
+$\ra$ Spend most of their life underground, but every 13 or 17 years they emerge. \\
+
+Life cycle of the 13 year cicada: they emerge as full adults, climb up into a branch of a tree, and lay eggs in the tree. The newborn cicadas are above ground, fall from the tree, and spend the rest of their lives (up until laying eggs) underground! \\
+
+Q: Why? This is odd! \\
+
+A: Many predators have 2-5 year life cycles. So, by cycling by a large prime number of years, cicadas avoid their predators. 13 and 17 year cycles cannot be tracked by any smaller number. \\
+
+**This is a mathematical explanation of an empirical phenomenon. \\
+
+Different kinds of mathematical explanations: 1) within mathematics (intra-mathematical); some theorems such as $a^2 + b^2 = c^2$ have {\it explanatory} proofs, 2) Explanations of empirical phenomena that use math, like physical laws, 3) Extra-mathematical distinctively mathematical explanations of empirical phenomena. \\
+
+The puzzle here is the {\it third} one: how does this take place? \\
+
+Some answers:
+\begin{enumerate}
+	\item Counterfactual accounts of causal explanations: Woodward (2003) developed an interventionist account of causal explanation that relies on counterfactual conditionals: if $A$ had been different, then $B$ would have been different, too (if $A$ explains $B$).
+	\item Causal and non-causal explanations: Peter Lipton: ``why, in a class of 22 students, there are four students whose birthday falls on the same day of the week? The answer is that there are seven days in a week, 22 students, so any arrangement makes this the case." 
+
+	$\ra$ Can the counterfactual account be extend to cover non-causal explanations?
+
+	$\ra$ One idea: Had there been 21 students, there needn't be 4 birthdays the same day of the week.
+\end{enumerate}
+
+\ddef{The Problem of Counterpossibles}{When counterfactuals require an antecedent that is contrary to mathematical facts.} 
+$\ra$ Had $22/7 \leq 3$, there needn't be 4 birthdays the same day of the week! So, this isn't well grounded. \\
+
+
+Solution from Baron, Colyvan, and Ripley (2017): If, in addition to 13 and 1, 13 had factors 2 and 6, then North American periodical cicadas would not have 13-year life cycles. \\
+
+Worries: Can't even conceive of what it would be like for math to be different in this way. \\
+
+$\ra$ Answer: impossible things can be entertained! Water could be H30, and so on. Sometimes all we need is to state something to entertain the idea? \\
+
+Problem: impossible worlds! ``Possible worlds, I think, we should be willing to accept, at least if they are given a sober actualist explanation. There are possibilities, different ways things could have been or could still be. But impossible worlds, impossibillities, ways things could not have been, that is too much too swallow" (Stalnaker 1996) \\
+
+Answer: The BCR theory is not concerned with the semantics of counterfactuals or how to evaluate them, but instead in a more general project. \\
+
+Real worry: avoiding contradictions! \\
+
+BCR's strategy: avoid needless contradictions when dealing with counterpossible antecedents. Three main notions in all counterfactual reasoning: 1) holding fixed, 2) twiddling, 3) ramifying (all indicating how much is being changes). \\
+
+Back to Cicada example: counterfactual that explains why cicadas have 13 year life cycles. We need to change something about 13: originally we said that perhaps $2*6=13$, so 13 is no longer prime (but this yields a contradiction). \\
+
+$\ra$ Response: avoid, rather than manage, contradictions. Idea is to introduce the right kind of change to the conditions that BCR calls `$\times_1$" a new operator: $2 \times_1 6 = 13$. Then, BCR holds under $\times_1$. \\
+
+Q: Problem? Yes! We get what they wanted in the first step (no immediate contradiction), but contradictions still easily follow.
+
+A possible response: analogy with regular counterfactuals. So: the rock shattered the window because, if the rock hadn't been thrown, the window wouldn't have shattered. \\
+
+$\ra$ But this creates an inconsistency! The rock {\it was} thrown. \\
+
+Problem: The analogy breaks: counterfactuals of any kind requires that we deal with an impossible antecedent. Lewis (1979) gives us some criteria to assess similarity of worlds based on match of histories and break of laws or miracles. \\
+
+$\ra$ In math, a change in the structure is {\it permanent}. It has to propagate to the rest of mathematics. \\
+
+So: what are we left with? We can't just say 13 isn't prime any more. \\
+
+Open questions for dealing with the puzzle:
+\begin{enumerate}
+	\item Deny existence of genuine non causal explanations of empirical phenomena
+	\item Accept mathematical explanations, but analyze them in non-counterfactual terms
+	\item A better approach to counterfactuals that doesn't require impossible worlds.
+\end{enumerate}
+
+
+\spacerule
+
+\subsection{Anders Herlitz on Predictive Fairness}
+
+Main point: impossibility theorem from Kleinberg that should have significant implications outside of CS. \\
+
+Background:
+\begin{itemize}
+\item COMPAS: a statistical method that was used by US courts to determine recidivism risk (re-offense rate). Used this risk score to prosecute, set bail, sentencing and so on.
+$\ra$ Algorithmically generated risk score had major influence on outcomes.
+\item COMPAS systematically ascribed higher risk scores to black nonrecidivists compared to the risk scores ascribed to white nonrecividivists.
+\item Northpointe, the company that developed COMPAS replied: COMPAS is not biased, it's well calibrated. When it identified a set of people who had probability $p$ of being recidivists, a $p$-fraction of this set were recidivists. So: it's fair!
+\end{itemize}
+
+Thus, two notions of fairness:
+\begin{enumerate}
+\item If it systematically ascribes higher scores to negative instances in one salient social group compared to another, and/or ascribes lower scores to positive instances in one group vs. the other. 
+\item Predictive decision method is unfair if it systematically ascibes higher risk scores to one salient social group compared to another.
+\end{enumerate}
+
+Problem: no imperfect decision system can meet both conditions! (Result from Kleinberg). \\
+
+Proof idea: first, need some definitions.
+
+\ddef{Well calibrated}{An algorithm identifies a set of people as having probability $z$ of constituting positive instances then approximately a $z$ fraction of this set should be indeed positive. This condition should hold when applied separately in each group as well.}
+
+Balance:
+\begin{enumerate}
+	\item Balance for positive class: avg score received by people constituting positive instances should be same in both groups.
+	\item Balance for negative class: avg score received by people constituting negative instances should be same in both groups.
+\end{enumerate}
+
+Impossibilty argument: notation. $N_t$ is number of people in group $t$, $P_t$ number of people in $t$ who are positive, $x_t$ be avg score given to a member of group $t$ who is negative, $y_t$ ame but positive. \\
+
+Proof idea:
+\begin{itemize}
+\item Supposed the decision method is well-calibrated: then, the total score ascribed to a group can be written as a linear function: 
+\[
+(N - P_t)x_t + P_t y_t = P_t.
+\]
+\item If the decision method is balanced, $x$ and $y$ must be the same for each group. So, defines a system of equations.
+\item Solving this system of equations requires that one of two conditions hold: either $P$ is the same for each group (so all $x$ and $y$ satisfy every equation), or $x=0$ and $y=1$. $\square$
+	\end{itemize}
+
+
+Q: Why care? Sure, COMPAS seems wrong, but doesn't that mean we shouldn't rely on decision algorithms in the judicial system? \\
+
+A: Hold on... The impossibility argument shows that {\it all systematic methods} that carry out this probabilistic reasoning are doomed. This applies to all areas where we make predictions: judicial system, healthcare, and so on (whether it is algorithmically- or human-driven). \\
+
+Normatige suggestion: think about principles of fairness for predictive decision methods. Here are three:
+\begin{enumerate}
+	\item {\it Dominance:} A decision method that is better w.r.t. one of the dimensions of fairness and worse with respect to non of the dimensions is better overall.
+	\item {\it Transparency:} Unfair decision makers should be aware of unintended differences in impact.
+	\item {\it Priority to the worse-off:} Decision method should aim to be better for members of a worse-off subgroup.
+\end{enumerate}
+
+
+\spacerule
+
+
+
+
+
+
 
